@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artificial_intelligence</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0 auto;
+            background: linear-gradient(0.6turn, #3f87a6, #8ef6e4, #e0ffcd);
+            margin: 80px auto;
+            padding: 100px 50px;
+            max-width: 600px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #3b50b2;
+            font-size: 50px;
+            margin-top: 10px;
+        }
+        
+        h2 {
+            text-align: center;
+            border: 1px solid #3b50b2;
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 80%;
+            font-size: 35px;
+        }
+        
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        p {
+            text-align: justify;
+            font-size: 15px;
+            padding: 10px 10px;
+            margin-left: 60px;
+            margin-right: 60px;
+            line-height: 1.5;
+            margin-bottom: 2px;
+        }
+        
+        button {
+            padding: 25px 15px;
+            font-size: 17px;
+            background-color: #3b50b2;
+            color: #edf7fa;
+            border: 0 solid #fcf8f3;
+            border-radius: 8px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            margin: 50px 20px 50px 20px;
+        }
+        
+        button:hover {
+            background-color: white;
+            color: #3b50b2;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-top: 0;
+        }
+        
+        a {
+            display: block;
+            color: #ff5d9e;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .term {
+            font-weight: bolder;
+        }
+        
+        .info {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .linkedin {
+            display: inline;
+        }
+        
+        .footer {
+            display: block;
+            text-align: center;
+            padding: 0px;
+            color: gray;
+            font-size: 12px;
+            box-shadow: 20px black;
+            transition: all ease-in-out;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Artificial Intelligence</h1>
+    <h2><em>What is AI ?</em></h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/969/original/AI-CAREER-660x330.jpg?1624022972" alt="AI" />
+
+    <p>
+        <span class="term">Artificial intelligence (AI)</span> is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals, which involves consciousness and emotionality. The distinction between the former
+        and the latter categories is often revealed by the acronym chosen. 'Strong' AI is usually labelled as artificial general intelligence (AGI) while attempts to emulate 'natural' intelligence have been called artificial biological intelligence (ABI).
+        <br /> AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of achieving its goals.[3] Colloquially, the term "artificial intelligence" is often
+        used to describe machines that mimic
+        <strong>"cognitive" functions</strong> that humans associate with the human mind, such as <em>"learning"</em> and <em>"problem solving"</em>.
+        <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" class="info">
+        Read More
+      </a>
+    </p>
+    <button>Click here to Subscribe 🤖</button>
+    <hr />
+    <div class="footer">
+        This page is built by
+        <a href="https://www.linkedin.com/in/hejaz-nawasser-53990179/" target="_blank" class="linkedin">
+        Hejaz Nawaser</a
+      >
+    </div>
+    <script>
+      function signUp() {
+        let email = prompt("Enter your Email please ");
+        let name = prompt("Enter your name please ");
+        if (
+          email.indexOf("@") > -1 &&
+          email.indexOf(".") > -1 &&
+          name.length > 1
+        ) {
+          alert(
+            "Thank you " +
+              name +
+              ", Your Email has been registered successfully. 👍 "
+          );
+        } else {
+          alert("Sorry, the name or Email address are not valid.  🙁 ");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
